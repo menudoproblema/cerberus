@@ -2,27 +2,29 @@
 This module contains the error messages issued by the Cerberus Validator.
 The test suite uses this module as well.
 """
-ERROR_SCHEMA_MISSING = "validation schema missing"
-ERROR_SCHEMA_FORMAT = "'%s' is not a schema, must be a dict"
-ERROR_SCHEMA_TYPE = "type of field '%s' must be either 'list' or 'dict'"
-ERROR_DOCUMENT_MISSING = "document is missing"
-ERROR_DOCUMENT_FORMAT = "'%s' is not a document, must be a dict"
-ERROR_UNKNOWN_RULE = "unknown rule '%s' for field '%s'"
-ERROR_DEFINITION_FORMAT = "schema definition for field '%s' must be a dict"
-ERROR_UNKNOWN_FIELD = "unknown field"
-ERROR_REQUIRED_FIELD = "required field"
-ERROR_UNKNOWN_TYPE = "unrecognized data-type '%s'"
-ERROR_BAD_TYPE = "must be of %s type"
-ERROR_MIN_LENGTH = "min length is %d"
-ERROR_MAX_LENGTH = "max length is %d"
-ERROR_UNALLOWED_VALUES = "unallowed values %s"
-ERROR_UNALLOWED_VALUE = "unallowed value %s"
-ERROR_ITEMS_LIST = "length of list should be %d"
-ERROR_READONLY_FIELD = "field is read-only"
-ERROR_MAX_VALUE = "max value is %d"
-ERROR_MIN_VALUE = "min value is %d"
-ERROR_EMPTY_NOT_ALLOWED = "empty values not allowed"
-ERROR_NOT_NULLABLE = "null value not allowed"
-ERROR_REGEX = "value does not match regex '%s'"
-ERROR_DEPENDENCIES_FIELD = "field '%s' is required"
-ERROR_DEPENDENCIES_FIELD_VALUE = "field '%s' is required with values: %s"
+defaults = {
+    'schema_missing': "validation schema missing",
+    'schema_format': "'%s' is not a schema, must be a dict",
+    'schema_type': "type of field '%s' must be either 'list' or 'dict'",
+    'document_missing': "document is missing",
+    'document_format': "'%s' is not a document, must be a dict",
+    'unknown_rule': "unknown rule '%s' for field '%s'",
+    'definition_format': "schema definition for field '%s' must be a dict",
+    'unknown_field': "unknown field",
+    'required_field': "required field",
+    'unknown_type': "unrecognized data-type '%s'",
+    'bad_type': "must be of %s type",
+    'min_length': "min length is %d",
+    'max_length': "max length is %d",
+    'unallowed_values': "unallowed values %s",
+    'unallowed_value': "unallowed value %s",
+    'items_list': "length of list should be %d",
+    'readonly_field': "field is read-only",
+    'max_value': "max value is %d",
+    'min_value': "min value is %d",
+    'empty_not_allowed': "empty values not allowed",
+    'not_nullable': "null value not allowed",
+    'regex': "value does not match regex '%s'",
+    'dependencies_field': "field '%s' is required",
+    'dependencies_field_value': "field '%s' is required with values: %s",
+}
